@@ -8,7 +8,7 @@ library(purrr)
 #library(shinythemes)
 
 gs4_deauth()
-responses <- read_sheet("https://docs.google.com/spreadsheets/d/1ND2z22rjs1f-Hyt0NtDdkUGB11gnJ9odl77s8UkK-jo/") %>%
+responses <- read_sheet("https://docs.google.com/spreadsheets/d/nameofgoglesheet/") %>%
     dplyr::arrange(desc(Timestamp))
 
 ui <- fluidPage(
